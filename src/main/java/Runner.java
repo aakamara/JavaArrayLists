@@ -30,31 +30,34 @@ public class Runner {
             System.out.println(i);
         }
 
-/*      if(x < scottishIslands.length){
-            System.out.println(scottishIslands[x]);
-         }
- */
-
-
 //        1. Add "Coll" to the end of the list Y
+
 //        2. Add "Tiree" to the start of the list Y
-        //scottishIsland.add(0, "Tiree");
+        scottishIslands.add(0, "Tiree");
+
 //        3. Add "Islay" after "Jura" and before "Mull" Y
-        //scottishIsland.add(2, "Islay");
+        scottishIslands.add(2, "Islay");
+
 //        4. Print out the index position of "Skye" ?
-        //int skyeIndex = scottishIsland.indexOf("Skye");
-        //System.out.println("Skye index: " + skyeIndex);
+        int skyeIndex = scottishIslands.indexOf("Skye");
+
+        System.out.println("Skye index: " + skyeIndex);
+
 //        5. Remove "Tresco" from the list by name Y
-        //scottishIslands.remove("Tresco");
+        scottishIslands.remove("Tresco");
+
 //        6. Remove "Arran" from the list by index Y
-        //scottishIslands.remove(5);
+        scottishIslands.remove(5);
+
 //        7. Print the number of islands in your arraylist Y
-        //System.out.println(scottishIslands.size());
+        System.out.println(scottishIslands.size());
+
 //        8. Sort the list alphabetically Y
-        //Collections.sort(scottishIslands);
+        Collections.sort(scottishIslands);
+
 //        9. Print out all the islands using a for loop Y
-        //for(int i = 0; i < scottishIslands.size(); i++){ System.out.println(scottishIslands.get(i));}
-        //for(String island : scottishIsland) { System.out.println(scottishIslands.get(i));}
+           /* for(int i = 0; i < scottishIslands.size(); i++){ System.out.println(scottishIslands.get(i));}
+            for(String island : scottishIslands) { System.out.println(scottishIslands.get(i));} */
 
 
         System.out.println(scottishIslands);
@@ -69,21 +72,22 @@ public class Runner {
         System.out.println("numbers: " + numbers);
 
 //        1. Print out a list of the even integers ?
-        /* List<Integer> evenNumbers = new ArrayList<>();
-            for(int number : numbers) {
-                if ((number % 2) == 0) { evenNumbers.add(number);
-                System.out.println(evenNumber);
-                }
-         */
+        List<Integer> evenNumbers = new ArrayList<>();
+        for (int number : numbers) {
+            if ((number % 2) == 0) {
+                evenNumbers.add(number);
+                System.out.println(evenNumbers);
+            }
+
 //        2. Print the difference between the largest and smallest value
-        /* Collections.sort(number);
-            System.out.println(numbers.get((number.size() -1) - (numbers.get(0)));
+            /* Collections.sort(numbers);
+            System.out.println(numbers.get((numbers.size() -1) - (numbers.get(0)));
 
             int maxNumber = Collections.max(numbers);
             int minNumber = Collections.min(numbers);
             System.out.println(maxNumber - minNumber);
+*/
 
-         */
 //        3. Print true if the list contains a 1 next to a 1 somewhere
         /*  boolean isContains = false;
             for (int i = 0; i < numbers.size() - 1; i++) {
@@ -117,8 +121,8 @@ public class Runner {
                 }
               System.out.println(sum2);
          */
-        // check whether a number is 13
-        //if tracking the index, that if I hit 13, stop incrementing the index
+            // check whether a number is 13
+            //if tracking the index, that if I hit 13, stop incrementing the index
         /* int total = 0;
         System.out.println("actual numbers: " + numbers);
             for(int number : numbers) {
@@ -130,6 +134,7 @@ public class Runner {
              }
          */
 
+        }
     }
 
 }
